@@ -1,0 +1,17 @@
+.Post {
+  padding-bottom: 40px;
+  color: rgb(11, 43, 13)
+}
+
+.Post_header {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin: 30px 60px 30px 50px;
+}
+
+.PostsAll {
+  height: 400px; 
+  overflow-Y: scroll;
+  margin-bottom: 40px;
+}
