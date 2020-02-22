@@ -36,7 +36,8 @@ router.get("/:id", async (req, res) => {
 });
 
 router.delete("/:id", async (req, res) => {
-
+  await mysqlDB.getConnection().query('DELETE FROM `news` WHERE `id` = ?', req.params.id);
+  res.send("New was deleted!");
 });
 
 router.post("/", upload.single("image"), async (req, res) => {

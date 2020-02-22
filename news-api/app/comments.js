@@ -14,7 +14,8 @@ router.get("/", async (req, res) => {
 });
 
 router.delete("/:id", async (req, res) => {
-
+  await mysqlDB.getConnection().query('DELETE FROM `comments` WHERE `id` = ?', req.params.id);
+  res.send("Comment was deleted!");
 });
 
 router.post("/", async (req, res) => {
