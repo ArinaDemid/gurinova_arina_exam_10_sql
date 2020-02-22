@@ -6,9 +6,9 @@ module.exports = {
   rootPath,
   uploadPath: path.join(rootPath, "public/uploads"),
   database: {
-    host     : 'localhost',
-    user     : 'user',
-    password : '1qaz@WSX29',
-    database : 'exam_10_arina'
+    host: "localhost",
+    user: "user",
+    password: "1qaz@WSX29",
+    database: "exam_10_arina"
   }
 };
