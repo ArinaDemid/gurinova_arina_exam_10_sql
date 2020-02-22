@@ -1,0 +1,16 @@
+.GetComment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.GetComment_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.GetComment_comment {
+  padding: 0 20px;
+}

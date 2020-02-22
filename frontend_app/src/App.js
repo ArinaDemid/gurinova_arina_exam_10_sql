@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import {Container} from "reactstrap";
+import {Route, Switch} from "react-router-dom";
 import Toolbar from "./components/UI/Toolbar/Toolbar";
 import Posts from "./containers/Posts/Posts";
 import AddPost from "./containers/AddPost/AddPost";
-import {Container} from "reactstrap";
-import {Route, Switch} from "react-router-dom";
+import Show_post from './containers/Show_post/Show_post';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Posts} />
             <Route path="/news/new" exact component={AddPost} />
+            <Route path="/news/:id" exact component={Show_post}/>
             <Route path="/news" exact component={Posts} />
           </Switch>
         </Container>
