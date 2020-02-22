@@ -3,11 +3,12 @@ import Moment from "react-moment";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ProductThumbnail from "../ProductThumbnail/ProductThumbnail";
+import "./Post.css";
 
 class Post extends Component {
   render() {
     return (
-      <div className="Post">
+      <div className="Post_content">
         <ProductThumbnail image={this.props.image} />
         <div>
           <p className="Post_title">{this.props.title}</p>
