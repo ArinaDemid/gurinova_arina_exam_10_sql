@@ -9,6 +9,6 @@ module.exports = {
     host: "localhost",
     user: "user",
     password: "1qaz@WSX29",
-    database: "exam_10_arina"
+    database: "exam_10"
   }
 };

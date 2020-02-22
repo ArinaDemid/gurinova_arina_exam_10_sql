@@ -138,9 +138,12 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchPost: id => dispatch(fetchPost(id)),
     fetchComments: newID => dispatch(fetchComments(newID)),
-    deleteComment: (event, id, new_ID) => dispatch(deleteComment(event, id, new_ID)),
-    valueChangeComment: (event, value) => dispatch(valueChangeComment(event, value)),
-    onSubmitComment: (event, comment, new_ID) => dispatch(onSubmitComment(event, comment, new_ID))
+    deleteComment: (event, id, new_ID) =>
+      dispatch(deleteComment(event, id, new_ID)),
+    valueChangeComment: (event, value) =>
+      dispatch(valueChangeComment(event, value)),
+    onSubmitComment: (event, comment, new_ID) =>
+      dispatch(onSubmitComment(event, comment, new_ID))
   };
 };
 
